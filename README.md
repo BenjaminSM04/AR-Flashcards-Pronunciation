@@ -353,18 +353,16 @@ Si no se asigna `voiceClip` específico, el sistema buscará automáticamente el
 - **Charis SIL / Doulos SIL**: [SIL Open Font License](https://scripts.sil.org/OFL)
 
 ### Audios
-- Materiales con permisos adecuados (propios o con licencia libre)
-- Si usas recursos de terceros, incluir atribución correspondiente
+- Materiales con licencia libre
 
 ### Código
-- Proyecto educativo - verificar términos con tu institución
-- Si es código abierto, considerar licencia MIT o GPL v3
+- Código abierto
 
 ---
 
 ## 👥 Contribuciones
 
-Este proyecto fue desarrollado como parte de un proyecto educativo. Si deseas contribuir o reportar problemas, por favor abre un issue en este repositorio.
+Este proyecto fue desarrollado por mi. Si deseas contribuir o reportar problemas, por favor abre un issue en este repositorio.
 
 ---
 
