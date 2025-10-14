@@ -1,0 +1,62 @@
+# --- Unity core ---
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Aa]rtifacts/
+[Mm]emoryCaptures/
+UserSettings/
+sysinfo.txt
+*.stacktrace
+
+# --- Auto-generated project files (IDE) ---
+.vs/
+.idea/
+*.sln
+*.csproj
+*.unityproj
+*.user
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+*.suo
+*.DotSettings.user
+
+# --- Rider / Gradle caches (Android) ---
+/.gradle/
+.gradle/
+/ExportedProject/        
+# si exportas Android Studio desde Unity
+
+# --- Platform-specific trash ---
+.DS_Store
+Thumbs.db
+
+# --- Addressables cache (mantén .meta) ---
+Assets/AddressableAssetsData/*/*.bin*
+Assets/StreamingAssets/aa/*
+
+# --- Crash/Build outputs ---
+*.dmp
+*.apk
+*.aab
+
+# --- VS Code workspace (opcional eliminar si lo quieres versionar) ---
+.vscode/
+
+# --- TextMeshPro examples/importer caches ---
+Assets/TextMesh Pro/*/Resources/Font Assets/*_Fallback.asset
+Assets/TextMesh Pro/*/Sprites/EmojiOne/*
+
+# --- Do NOT ignore these (comentario informativo) ---
+# Mantén:
+# - Assets/
+# - Packages/
+# - ProjectSettings/
+# - Todos los archivos *.meta (Unity los necesita)
