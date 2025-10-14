@@ -2,7 +2,8 @@
 
 
 
-**Aplicación educativa de Realidad Aumentada para practicar vocabulario del aula con pronunciación interactiva.**App AR educativa (Unity + Vuforia 9.8) para practicar vocabulario del aula.
+**Aplicación educativa de Realidad Aumentada para practicar vocabulario del aula con pronunciación interactiva.**
+App AR educativa (Unity + Vuforia 9.8) para practicar vocabulario del aula.
 
 Escanea tarjetas (Image Targets), presiona el **Virtual Button** y verás un **overlay** con el nombre en inglés, su **pronunciación (IPA)** y podrás **reproducir audio**. Incluye un **HUD siempre visible** para guiar el escaneo.
 
