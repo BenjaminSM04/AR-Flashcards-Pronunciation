@@ -1,8 +1,9 @@
-# AR-Flashcards-Pronunciation# 
+# AR-Flashcards-Pronunciation
 
 
 
-**Aplicación educativa de Realidad Aumentada para practicar vocabulario del aula con pronunciación interactiva.**App AR educativa (Unity + Vuforia 9.8) para practicar vocabulario del aula.
+**Aplicación educativa de Realidad Aumentada para practicar vocabulario del aula con pronunciación interactiva.**
+App AR educativa (Unity + Vuforia 9.8) para practicar vocabulario del aula.
 
 Escanea tarjetas (Image Targets), presiona el **Virtual Button** y verás un **overlay** con el nombre en inglés, su **pronunciación (IPA)** y podrás **reproducir audio**. Incluye un **HUD siempre visible** para guiar el escaneo.
 
@@ -352,18 +353,16 @@ Si no se asigna `voiceClip` específico, el sistema buscará automáticamente el
 - **Charis SIL / Doulos SIL**: [SIL Open Font License](https://scripts.sil.org/OFL)
 
 ### Audios
-- Materiales con permisos adecuados (propios o con licencia libre)
-- Si usas recursos de terceros, incluir atribución correspondiente
+- Materiales con licencia libre
 
 ### Código
-- Proyecto educativo - verificar términos con tu institución
-- Si es código abierto, considerar licencia MIT o GPL v3
+- Código abierto
 
 ---
 
 ## 👥 Contribuciones
 
-Este proyecto fue desarrollado como parte de un proyecto educativo. Si deseas contribuir o reportar problemas, por favor abre un issue en este repositorio.
+Este proyecto fue desarrollado por mi. Si deseas contribuir o reportar problemas, por favor abre un issue en este repositorio.
 
 ---
 
