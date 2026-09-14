@@ -1,32 +1,50 @@
 using UnityEngine;
 
-[ExecuteAlways]
+[RequireComponent(typeof(RectTransform))]
 public class SafeAreaFitter : MonoBehaviour
 {
-    RectTransform rectTransform;
-    Rect lastSafeArea;
+    private RectTransform rectTransform;
+    private Rect lastSafeArea;
+    private Vector2Int lastScreenSize;
 
-    void OnEnable()
+    private void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
-        ApplySafeArea();
     }
 
-    void Update()
+    private void OnEnable()
     {
-#if UNITY_EDITOR
-        ApplySafeArea();
-#endif
+        if (rectTransform == null)
+            rectTransform = GetComponent<RectTransform>();
+
+        // Solo modifica los anclajes cuando la aplicación está ejecutándose.
+        if (Application.isPlaying)
+            ApplySafeArea();
     }
 
-    void ApplySafeArea()
+    private void Update()
     {
-        if (Screen.safeArea == lastSafeArea && rectTransform.hasChanged == false) return;
+        if (!Application.isPlaying)
+            return;
 
-        lastSafeArea = Screen.safeArea;
+        bool safeAreaChanged = Screen.safeArea != lastSafeArea;
+        bool screenSizeChanged =
+            Screen.width != lastScreenSize.x ||
+            Screen.height != lastScreenSize.y;
 
-        var anchorMin = lastSafeArea.position;
-        var anchorMax = lastSafeArea.position + lastSafeArea.size;
+        if (safeAreaChanged || screenSizeChanged)
+            ApplySafeArea();
+    }
+
+    private void ApplySafeArea()
+    {
+        if (Screen.width <= 0 || Screen.height <= 0)
+            return;
+
+        Rect safeArea = Screen.safeArea;
+
+        Vector2 anchorMin = safeArea.position;
+        Vector2 anchorMax = safeArea.position + safeArea.size;
 
         anchorMin.x /= Screen.width;
         anchorMin.y /= Screen.height;
@@ -38,6 +56,7 @@ public class SafeAreaFitter : MonoBehaviour
         rectTransform.offsetMin = Vector2.zero;
         rectTransform.offsetMax = Vector2.zero;
 
-        rectTransform.hasChanged = false;
+        lastSafeArea = safeArea;
+        lastScreenSize = new Vector2Int(Screen.width, Screen.height);
     }
 }
