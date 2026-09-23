@@ -1,0 +1,5 @@
+E:/unity/AR-Flashcards-Pronunciation/.utmp/RelWithDebInfo/2x3m3ik3/armeabi-v7a/CMakeFiles/edit_cache.dir
+E:/unity/AR-Flashcards-Pronunciation/.utmp/RelWithDebInfo/2x3m3ik3/armeabi-v7a/CMakeFiles/rebuild_cache.dir
+E:/unity/AR-Flashcards-Pronunciation/.utmp/RelWithDebInfo/2x3m3ik3/armeabi-v7a/FramePacing/CMakeFiles/swappywrapper.dir
+E:/unity/AR-Flashcards-Pronunciation/.utmp/RelWithDebInfo/2x3m3ik3/armeabi-v7a/FramePacing/CMakeFiles/edit_cache.dir
+E:/unity/AR-Flashcards-Pronunciation/.utmp/RelWithDebInfo/2x3m3ik3/armeabi-v7a/FramePacing/CMakeFiles/rebuild_cache.dir
